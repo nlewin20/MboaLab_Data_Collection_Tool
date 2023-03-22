@@ -12,18 +12,18 @@ const double kDefaultPadding = 16.0;
 const double kDefaultPadding2x = 32.0;
 
 ///----TextStyles----///
-const TextStyle kHeading = TextStyle(fontWeight: FontWeight.w400, fontSize: 22);
+const TextStyle kHeading = TextStyle(fontWeight: FontWeight.w400, fontSize: 24);
 
-const TextStyle kBody = TextStyle(fontWeight: FontWeight.normal, fontSize: 14);
+const TextStyle kBody = TextStyle(fontWeight: FontWeight.normal, fontSize: 12);
 const TextStyle kBodyBold =
-    TextStyle(fontWeight: FontWeight.bold, fontSize: 14);
+    TextStyle(fontWeight: FontWeight.bold, fontSize: 12);
 
 ///----------Text Form Field styles ---------////
 InputDecoration customTextFieldDecoration = InputDecoration(
   errorStyle: kBody.copyWith(color: kFuchsia),
 
   errorBorder: OutlineInputBorder(
-    gapPadding: 3,
+    gapPadding: 0,
     borderSide: const BorderSide(width: 1, color: kFuchsia),
     borderRadius: BorderRadius.circular(
       kDefaultPadding,

@@ -1,4 +1,5 @@
 import 'package:data_collection_tool/core/theme.dart';
+import 'package:data_collection_tool/screens/homescreen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/auth_screens/login_screen.dart';
@@ -17,20 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: customLightTheme(context),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
       routes: {
         LoginScreen.id: (context) => const LoginScreen(),
         SignUpScreen.id: (context) => const SignUpScreen(),
+        HomeScreen.id: (context) => const HomeScreen(),
       },
     );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
   }
 }
